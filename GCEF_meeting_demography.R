@@ -11,10 +11,8 @@ library(dplyr)
 library(ggplot2)
 
 ## Load data
-dat_trans <- read.csv("C://Users/ma22buky/Documents/PhD/GCEF_Data_demografie/data_2020/GCEF_demodata_complete_2020-11-20.csv")
-dat_seedl <- read.csv("C://Users//ma22buky/Documents/Julia_Paper/Seed_table_2019_all_species.csv")
-
-dat_excl <- read.csv("C://Users/ma22buky/Documents/PhD/GCEF_Data_demografie/data_2020/Tab_excl_BL_2020-11-20.csv")
+dat_trans <- read.csv("https://raw.githubusercontent.com/Martin19910130/GCEF_meeting_plots/main/GCEF_demodata_complete_2020-11-20.csv")
+dat_excl <- read.csv("https://raw.githubusercontent.com/Martin19910130/GCEF_meeting_plots/main/Tab_excl_BL_2020-11-20.csv")
 
 ## get a year column by using the date data
 dat_trans$date <- as.Date(dat_trans$date, "%d.%m.%Y")
